@@ -7,9 +7,9 @@ jtemple is a template engine, to achieve small tasks in few lines. No technical 
 ### Options
  > data : {JSON}
  
- > template : {Tag id which contains your template code}
+ > template : {Selector which contains your template code}
  
- > target : {Tag id where you want this template to be published}
+ > target : {Selector where you want this template to be published}
  
 ### Usage
 
@@ -60,8 +60,9 @@ For print JSON value in your template "data" is main container of your JSON data
 ```
 
 ### Example
+Template structure
 ```javascript
-<div class="example-container">
+<div id="jtemple-widget-container">
     #for(var z=0; z < data.length; z++);
         <div class="row">
             #for(var y=0; y < data[z].length; y++);
@@ -76,6 +77,17 @@ For print JSON value in your template "data" is main container of your JSON data
         </div>
     #endfor;
 </div>
+```
+
+Tell jtemple to render template
+```javascript
+<div id="jtemple-output"></div>
+<script type="text/javascript">
+$('#jtemple-output').jtemple({
+    data : {JSON},
+    template : '#jtemple-widget-container'
+});
+</script>
 ```
 
 ## Future release
