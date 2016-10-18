@@ -6,7 +6,9 @@ jtemple is a template engine, to achieve small tasks in few lines. No technical 
  
 ### Options
  > data : {JSON}
+ 
  > template : {Tag id which contains your code}
+ 
  > target : {Tag id where you want this template will be published}
  
 ### Usage
