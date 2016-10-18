@@ -9,7 +9,7 @@ jtemple is a template engine, to achieve small tasks in few lines. No technical 
  
  > template : {Tag id which contains your template code}
  
- > target : {Tag id where you want this template will be published}
+ > target : {Tag id where you want this template to be published}
  
 ### Usage
 
