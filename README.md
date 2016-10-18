@@ -11,6 +11,8 @@ jtemple is a template engine, to achieve small tasks in few lines. No technical 
  
  > target : {Selector where you want this template to be published}
  
+ > publish (Default: replace): {replace, append, prepend} (append: put content at end of container) (prepend: put content at start)
+ 
 ### Usage
 
 Include in your project
