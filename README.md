@@ -59,6 +59,25 @@ For print JSON value in your template "data" is main container of your JSON data
 </div>
 ```
 
+### Example
+```javascript
+<div class="example-container">
+    #for(var z=0; z < data.length; z++);
+        <div class="row">
+            #for(var y=0; y < data[z].length; y++);
+                <div class="col-md-3">
+                    <input type="radio" name="category" value="{#data[z][y][\'id\']#}" id="category-{#data[z][y].id#}">
+                    <label for="category-{#data[z][y].id#}">
+                        <img src="{#data[z][y].icon#}" alt="{#data[z][y].title#}" />
+                        <span class="title">{#data[z][y].title#}</span>
+                    </label>
+                </div>
+            #endif;
+        </div>
+    #endfor;
+</div>
+```
+
 ## Future release
 I'll add many more features like foreach loop, if else conditions and many i'll share you all.
 
