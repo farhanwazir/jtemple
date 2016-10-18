@@ -91,6 +91,6 @@ $('#jtemple-output').jtemple({
 ```
 
 ## Future release
-I'll add many more features like foreach loop, if else conditions and many i'll share you all.
+I'll add many more features like foreach loop and more, share with you all later.
 
 Contributors are welcome. 
