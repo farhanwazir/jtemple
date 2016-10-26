@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jtemple example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../dist/jtemple.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script>
+        var collection = [
+            {"id":1,"first_name":"Rebecca","last_name":"Willis","email":"rwillis0@fastcompany.com","gender":"Female","avatar":"https://robohash.org/amaximeaccusantium.jpg?size=150x150&set=set1"},
+            {"id":2,"first_name":"Dennis","last_name":"Nelson","email":"dnelson1@cyberchimps.com","gender":"Male","avatar":"https://robohash.org/quaeratquoquos.jpg?size=150x150&set=set1"},
+            {"id":3,"first_name":"Jacqueline","last_name":"Evans","email":"jevans2@scientificamerican.com","gender":"Female","avatar":"https://robohash.org/eostemporabeatae.bmp?size=150x150&set=set1"},
+            {"id":4,"first_name":"Adam","last_name":"Sims","email":"asims3@topsy.com","gender":"Male","avatar":"https://robohash.org/veritatistotamnon.bmp?size=150x150&set=set1"},
+            {"id":5,"first_name":"Tammy","last_name":"Day","email":"tday4@scientificamerican.com","gender":"Female","avatar":"https://robohash.org/liberoautunde.bmp?size=150x150&set=set1"},
+            {"id":6,"first_name":"Deborah","last_name":"Garcia","email":"dgarcia5@cyberchimps.com","gender":"Female","avatar":"https://robohash.org/remetquos.png?size=150x150&set=set1"},
+            {"id":7,"first_name":"Carolyn","last_name":"Lopez","email":"clopez6@arizona.edu","gender":"Female","avatar":"https://robohash.org/occaecativoluptatemquia.png?size=150x150&set=set1"},
+            {"id":8,"first_name":"Theresa","last_name":"Robertson","email":"trobertson7@macromedia.com","gender":"Female","avatar":"https://robohash.org/doloribusmaioresimpedit.png?size=150x150&set=set1"},
+            {"id":9,"first_name":"Steven","last_name":"Boyd","email":"sboyd8@google.com.au","gender":"Male","avatar":"https://robohash.org/consequaturharumet.bmp?size=150x150&set=set1"},
+            {"id":10,"first_name":"Maria","last_name":"Bryant","email":"mbryant9@indiegogo.com","gender":"","avatar":"https://robohash.org/voluptatumlaboriosamquis.jpg?size=150x150&set=set1"}
+        ];
+
+        $(document).ready(function(){
+            $('#jtemple-result').jtemple({
+                template : 'template-example',
+                data : collection
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <h2>jtemple Demo</h2>
+
+    <hr>
+
+    <h4>Data</h4>
+    <pre>
+        [
+            {"id":1,"first_name":"Rebecca","last_name":"Willis","email":"rwillis0@fastcompany.com","gender":"Female","avatar":"https://robohash.org/amaximeaccusantium.jpg?size=150x150&set=set1"},
+            {"id":2,"first_name":"Dennis","last_name":"Nelson","email":"dnelson1@cyberchimps.com","gender":"Male","avatar":"https://robohash.org/quaeratquoquos.jpg?size=150x150&set=set1"},
+            {"id":3,"first_name":"Jacqueline","last_name":"Evans","email":"jevans2@scientificamerican.com","gender":"Female","avatar":"https://robohash.org/eostemporabeatae.bmp?size=150x150&set=set1"},
+            {"id":4,"first_name":"Adam","last_name":"Sims","email":"asims3@topsy.com","gender":"Male","avatar":"https://robohash.org/veritatistotamnon.bmp?size=150x150&set=set1"},
+            {"id":5,"first_name":"Tammy","last_name":"Day","email":"tday4@scientificamerican.com","gender":"Female","avatar":"https://robohash.org/liberoautunde.bmp?size=150x150&set=set1"},
+            {"id":6,"first_name":"Deborah","last_name":"Garcia","email":"dgarcia5@cyberchimps.com","gender":"Female","avatar":"https://robohash.org/remetquos.png?size=150x150&set=set1"},
+            {"id":7,"first_name":"Carolyn","last_name":"Lopez","email":"clopez6@arizona.edu","gender":"Female","avatar":"https://robohash.org/occaecativoluptatemquia.png?size=150x150&set=set1"},
+            {"id":8,"first_name":"Theresa","last_name":"Robertson","email":"trobertson7@macromedia.com","gender":"Female","avatar":"https://robohash.org/doloribusmaioresimpedit.png?size=150x150&set=set1"},
+            {"id":9,"first_name":"Steven","last_name":"Boyd","email":"sboyd8@google.com.au","gender":"Male","avatar":"https://robohash.org/consequaturharumet.bmp?size=150x150&set=set1"},
+            {"id":10,"first_name":"Maria","last_name":"Bryant","email":"mbryant9@indiegogo.com","gender":"","avatar":"https://robohash.org/voluptatumlaboriosamquis.jpg?size=150x150&set=set1"}
+        ]
+    </pre>
+
+    <hr>
+
+    <h4>Javascript Code</h4>
+
+    <pre>
+        <code>$(document).ready(function(){</code>
+            $('#jtemple-result').jtemple({
+                template : 'template-example',
+                data : collection
+            });
+        });
+    </pre>
+
+    <hr>
+
+    <h4>HTML Code</h4>
+    <pre>
+    &#x3C;div data-jtemple=&#x22;template-example&#x22;&#x3E;
+        #for(var z=0; z &#x3C; data.length; z++);
+        &#x3C;div class=&#x22;panel panel-default&#x22;&#x3E;
+            &#x3C;div class=&#x22;panel-body&#x22;&#x3E;
+                &#x3C;div class=&#x22;row&#x22;&#x3E;
+                    &#x3C;div class=&#x22;col-md-3&#x22;&#x3E;
+                        &#x3C;img src=&#x22;{#data[z].avatar#}&#x22; alt=&#x22;{#data[z].first_name#}&#x22;&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;col-md-6&#x22;&#x3E;
+                        Name: {#data[z].first_name#} {#data[z].last_name#}
+                        &#x3C;br&#x3E;
+                        Email: {#data[z].email#}
+                        #if(data[z].gender == &#x27;Female&#x27;);
+                        &#x3C;div class=&#x22;alert alert-danger&#x22;&#x3E;Gender: {#data[z].gender#}&#x3C;/div&#x3E;
+                        #elseif(data[z].gender == &#x27;Male&#x27;);
+                        &#x3C;div class=&#x22;alert alert-warning&#x22;&#x3E;Gender: {#data[z].gender#}&#x3C;/div&#x3E;
+                        #else;
+                        &#x3C;div class=&#x22;alert alert-success&#x22;&#x3E;No gender specify&#x3C;/div&#x3E;
+                        #endif;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+        &#x3C;/div&#x3E;
+        #endfor;
+    &#x3C;/div&#x3E;
+    </pre>
+
+    <hr>
+
+    <h4>Output</h4>
+<!-- Display container -->
+<div id="jtemple-result"></div>
+
+</div>
+
+
+
+<!-- Template -->
+<div data-jtemple="template-example">
+    #for(var z=0; z < data.length; z++);
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="{#data[z].avatar#}" alt="{#data[z].first_name#}">
+                </div>
+                <div class="col-md-6">
+                    Name: {#data[z].first_name#} {#data[z].last_name#}
+                    <br>
+                    Email: {#data[z].email#}
+                    #if(data[z].gender == 'Female');
+                    <div class="alert alert-danger">Gender: {#data[z].gender#}</div>
+                    #elseif(data[z].gender == 'Male');
+                    <div class="alert alert-warning">Gender: {#data[z].gender#}</div>
+                    #else;
+                    <div class="alert alert-success">No gender specify</div>
+                    #endif;
+                </div>
+            </div>
+        </div>
+    </div>
+    #endfor;
+</div>
+
+</body>
+</html>
