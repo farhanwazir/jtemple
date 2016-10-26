@@ -6,6 +6,12 @@ jtemple is a template engine, to achieve small tasks in few lines. No technical 
 
 ### Demo
 [Click here for demo at the end of page](https://farhanwazir.github.io/jtemple)
+
+### Install by Node.js
+
+```cmd
+npm install jtemple
+```
  
 ### Options
  > data : {JSON}
