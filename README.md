@@ -19,7 +19,14 @@ npm install jtemple
 bower install jtemple
 ```
  
-### Options
+### Usage
+
+Include in your project
+```javascript
+<script src="dist/jtemple.min.js" type="text/javascript"></script>
+```
+
+#### Options
  > data : {JSON}
  
  > template : {Selector data attribute (data-jtemple="template-name")}
@@ -27,13 +34,7 @@ bower install jtemple
  > target : {Selector where you want this template to be published}
  
  > publish (Default: replace): {replace, append, prepend} (append: put content at end of container) (prepend: put content at start)
- 
-### Usage
 
-Include in your project
-```javascript
-<script src="dist/jtemple.min.js" type="text/javascript"></script>
-```
 
 **Syntax**
 jtemple syntax is very simple as described below:
