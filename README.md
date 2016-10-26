@@ -7,7 +7,7 @@ jtemple is a template engine, to achieve small tasks in few lines. No technical 
 ### Options
  > data : {JSON}
  
- > template : {Selector which contains your template code}
+ > template : {Selector data attribute (data-jtemple="template-name")}
  
  > target : {Selector where you want this template to be published}
  
@@ -25,7 +25,7 @@ jtemple syntax is very simple as described below:
 "#" hash sign is indication of statement start and ";" semicolon sign is use for end line. Principle of scripting is must close opened statement, with jtemple you can close statement with #end{statement};. 
 You don't need to use #; signs except statements. 
 
-Currently jtemple only supports for #for(); and #if(); condition as illustrated below.
+jtemple supports #for();, #if();, #elseif(); and #else; statement and conditions as illustrated below.
 
 **#for();**
 ```javascript
@@ -41,6 +41,42 @@ Currently jtemple only supports for #for(); and #if(); condition as illustrated 
 **#if();**
 ```javascript
 #if(data.length > 0);
+    <div class="row">
+        <div class="col-md-3">
+        ....... Your code here
+        </div>
+    </div>
+#endif;
+</div>
+```
+
+**#elseif();**
+```javascript
+#if(data.length > 1);
+    <div class="row">
+        <div class="col-md-3">
+        ....... Your code here
+        </div>
+    </div>
+#elseif(data.length <= 1);
+    <div class="row">
+        <div class="col-md-3">
+        ....... Your code here
+        </div>
+    </div>
+#endif;
+</div>
+```
+
+**#else;**
+```javascript
+#if(data.length > 1);
+    <div class="row">
+        <div class="col-md-3">
+        ....... Your code here
+        </div>
+    </div>
+#else;
     <div class="row">
         <div class="col-md-3">
         ....... Your code here
@@ -92,7 +128,5 @@ $('#jtemple-output').jtemple({
 </script>
 ```
 
-## Future release
-I'll add many more features like foreach loop and more, share with you all later.
 
 Contributors are welcome. 
