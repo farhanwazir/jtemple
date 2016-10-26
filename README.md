@@ -3,6 +3,9 @@ jtemple is a template engine, to achieve small tasks in few lines. No technical 
 
 ### Dependencies
  > JQuery
+
+### Demo
+[Click here for demo at the end of page](https://farhanwazir.github.io/jtemple)
  
 ### Options
  > data : {JSON}
