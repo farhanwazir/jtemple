@@ -100,7 +100,7 @@ For print JSON value in your template "data" is main container of your JSON data
 ### Example
 Template structure
 ```javascript
-<div id="jtemple-widget-container">
+<div data-jtemple="template">
     #for(var z=0; z < data.length; z++);
         <div class="row">
             #for(var y=0; y < data[z].length; y++);
@@ -123,7 +123,7 @@ Tell jtemple to render template
 <script type="text/javascript">
 $('#jtemple-output').jtemple({
     data : {JSON},
-    template : '#jtemple-widget-container'
+    template : 'template'
 });
 </script>
 ```
