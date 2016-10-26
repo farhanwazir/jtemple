@@ -12,6 +12,12 @@ jtemple is a template engine, to achieve small tasks in few lines. No technical 
 ```cmd
 npm install jtemple
 ```
+
+### Install by bower
+
+```cmd
+bower install jtemple
+```
  
 ### Options
  > data : {JSON}
