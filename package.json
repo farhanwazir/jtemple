@@ -1,0 +1,31 @@
+{
+  "name": "jtemple",
+  "version": "1.0.0",
+  "description": "Fastest template engine for load json data and print in your html structure without any logic and complex scripting. Just 1 line code will save your lots of time.",
+  "main": "dist/jtemple.min.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farhanwazir/jtemple.git"
+  },
+  "keywords": [
+    "Template",
+    "engine",
+    "jtemple",
+    "widget",
+    "template",
+    "jquery",
+    "javascript"
+  ],
+  "author": "Farhan Wazir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/farhanwazir/jtemple/issues"
+  },
+  "homepage": "https://github.com/farhanwazir/jtemple#readme"
+}
