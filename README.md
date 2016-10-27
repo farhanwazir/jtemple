@@ -1,5 +1,6 @@
 # jtemple
-jtemple is a template engine, to achieve small tasks in few lines. No technical programming knowledge require to use it. If you are using html and jquery then don't hasitate it to use. jtemple will save your a lot of time and do many small tasks for you.
+jtemple is a widget template engine, to achieve small tasks in 1 line. No technical knowledge required. If you are 
+familiar with HTML and JQuery then you are champion of jtemple. It will save your lots of time and do many tasks for you.
 
 ### Dependencies
  > JQuery
