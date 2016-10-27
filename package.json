@@ -1,6 +1,6 @@
 {
   "name": "jtemple",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Fastest template engine for load json data and print in your html structure without any logic and complex scripting. Just 1 line code will save your lots of time.",
   "main": "dist/jtemple.min.js",
   "directories": {
