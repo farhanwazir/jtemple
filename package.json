@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/farhanwazir/jtemple/issues"
   },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
   "homepage": "https://github.com/farhanwazir/jtemple#readme"
 }
